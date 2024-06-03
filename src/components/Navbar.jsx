@@ -25,7 +25,7 @@ const Navbar = () => {
     }
     
   return (
-    <div className={active || pathname !== "/" ? 'flex flex-col items-center bg-white text-black ease-in duration-300 sticky top-0' : 'flex flex-col items-center bg-[#013914] text-white ease-in duration-300 top-0 sticky'}>
+    <div className={active || pathname !== "/" ? 'flex flex-col items-center bg-white text-black ease-in duration-300 sticky top-0 z-50' : 'flex flex-col items-center bg-[#013914] text-white ease-in duration-300 top-0 sticky '}>
         {/* container */}
         <div className='container w-[1400px] flex justify-between py-5'>
           {/* logo */}

@@ -13,4 +13,4 @@ const Slide = ({children,slidesToShow,arrowsScroll}) => {
   )
 }
 
-export default Slidegi
+export default Slide
