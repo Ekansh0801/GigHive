@@ -3,7 +3,9 @@ import Featured from '../components/Featured'
 import TrustedBy from '../components/TrustedBy'
 import Slide from '../components/Slide'
 import {cards} from '../data'
+import {projects} from "../data"
 import CatCard from '../components/CatCard'
+import ProjectCard from '../components/ProjectCard'
 
 const Home = () => {
   return (
@@ -76,7 +78,14 @@ const Home = () => {
               <img src='./img/pro.png' className='w-[720px]'/>
             </div>
           </div>
-        </div>        
+        </div>  
+        <Slide slidesToShow={4} arrowsScroll={4}>
+        {
+          projects.map((project) => (
+            <ProjectCard key={project.id} item = {project}/>
+          ))
+        }
+      </Slide>              
     </div>
   )
 }

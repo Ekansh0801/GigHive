@@ -49,7 +49,7 @@ const Navbar = () => {
               {
                 currentUser?.isSeller && (
                 <>
-                <Link to="/gigs">Gigs</Link>
+                <Link to="/mygigs">Gigs</Link>
                 <Link to="/add">Add new Gig</Link>
                 <Link to="/orders">Orders</Link>
                 <Link to="/messages">Messages</Link>
@@ -73,7 +73,8 @@ const Navbar = () => {
                 <Link to="/">Programming & Tech</Link>
                 <Link to="/">Bussiness</Link>
                 <Link to="/">Lifestyle</Link>
-                </div>   
+                </div>  
+                <hr className="w-[100%] h-0 border-[0.5px] border-solid border-[#d3d3d3]"/> 
           </>     
             )
         }
