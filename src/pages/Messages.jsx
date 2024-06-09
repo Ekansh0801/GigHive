@@ -18,7 +18,7 @@ const Messages = () => {
     <div className='messages flex justify-center'>
       <div className='container w-[1400px] py-[50px] '>
         <div className='title flex justify-between items-center'>
-          <h1>Orders</h1>
+          <h1 className='font-medium text-3xl mb-5'>Messages</h1>
         </div>
         <table className='w-full self-center'>
           <tr className='h-[50px]'>

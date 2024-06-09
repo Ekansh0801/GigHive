@@ -4,7 +4,7 @@ const Add = () => {
   return (
     <div className="add flex justify-center">
       <div className="container w-[1400px] py-[50px] ">
-        <h1 className="font-light text-[#808080] mb-[30px] ">Add New Gig</h1>
+        <h1 className="font-medium text-[25px] text-[#808080] mb-[30px] ">Add New Gig</h1>
         <div className="sections flex justify-between gap-[100px] ">
           <div className="info left  flex flex-col gap-[10px] justify-between">
             <label htmlFor="" className="text-[#808080] text-[18px]">Title</label>

@@ -7,7 +7,7 @@ const Gig = () => {
       <div className='container w-[1400px] py-[30px] flex gap-[50px] '>
         <div className='left flex-2 flex flex-col gap-5'>
           <span className='breadCrumbs font-light text-[13px] text-[#555]'>GIGHIVE > GRAPHICS & DESIGN></span>
-          <h1>I will create AI generated art for you</h1>
+          <h1 className='font-medium text-2xl'>I will create AI generated art for you</h1>
           <div className='user flex items-center gap-[10px] '>
             <img src="https://images.pexels.com/photos/720327/pexels-photo-720327.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-8 h-8 rounded-full object-cover' alt=""/>
             <span className='text-sm font-medium '>John Doe</span>

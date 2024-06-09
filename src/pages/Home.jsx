@@ -61,6 +61,65 @@ const Home = () => {
           </div>
         </div>
 
+        <div className='icon-section flex justify-center  py-[100px]'>
+          <div className='container w-[1400px] flex flex-col'>
+            <h1 className='font-bold text-[32px] text-[#404145] mb-[40px] pb-[24px]'>You need it, we've got it</h1>
+            <div className='icons w-[1200px] gap-32 mx-auto flex flex-wrap justify-between'>
+              <div className='icon flex flex-col items-center gap-1 cursor-pointer group'>
+                <img className='h-12 w-12' src='/img/graphics-design.png'/>
+                <div className="rounded-sm bottom-0 w-[50%] h-[1px] bg-[#d3d3d3] transition-all duration-200 group-hover:w-[70%] group-hover:bg-[#1dbf73]"></div>
+                <div className='text-[16px] font-normal text-[#222325]'>Graphics & Design</div>
+              </div>
+              <div className='icon flex flex-col items-center gap-1 group cursor-pointer'>
+                <img className='h-12 w-12' src='/img/online-marketing.png'/>
+                <div className="rounded-sm bottom-0 w-[50%] h-[1px] bg-[#d3d3d3] transition-all duration-200 group-hover:w-[70%] group-hover:bg-[#1dbf73]"></div>
+                <div className='text-[16px] font-normal text-[#222325]'>Digital Marketing</div>
+              </div>
+              <div className='icon flex flex-col items-center gap-1 group cursor-pointer'>
+                <img className='h-12 w-12' src='/img/writing-translation.png'/>
+                <div className="rounded-sm bottom-0 w-[50%] h-[1px] bg-[#d3d3d3] transition-all duration-200 group-hover:w-[70%] group-hover:bg-[#1dbf73]"></div>
+                <div className='text-[16px] font-normal text-[#222325]'>Writing & Translation</div>
+              </div>
+              <div className='icon flex flex-col items-center gap-1 group cursor-pointer'>
+                <img className='h-12 w-12' src='/img/video-animation.png'/>
+                <div className="rounded-sm bottom-0 w-[50%] h-[1px] bg-[#d3d3d3] transition-all duration-200 group-hover:w-[70%] group-hover:bg-[#1dbf73]"></div>
+                <div className='text-[16px] font-normal text-[#222325]'>Video & Animation</div>
+              </div>
+              <div className='icon flex flex-col items-center gap-1 group cursor-pointer'>
+                <img className='h-12 w-12' src='/img/music-audio.png'/>
+                <div className="rounded-sm bottom-0 w-[50%] h-[1px] bg-[#d3d3d3] transition-all duration-200 group-hover:w-[70%] group-hover:bg-[#1dbf73]"></div>
+                <div className='text-[16px] font-normal text-[#222325]'>Music & Audio</div>
+              </div>
+              <div className='icon flex flex-col items-center gap-1 group cursor-pointer'>
+                <img className='h-12 w-12' src='/img/programming.png'/>
+                <div className="rounded-sm bottom-0 w-[50%] h-[1px] bg-[#d3d3d3] transition-all duration-200 group-hover:w-[70%] group-hover:bg-[#1dbf73]"></div>
+                <div className='text-[16px] font-normal text-[#222325]'>Programming & Tech</div>
+              </div>
+              <div className='icon flex flex-col items-center gap-1 group cursor-pointer'>
+                <img className='h-12 w-12' src='/img/business.png'/>
+                <div className="rounded-sm bottom-0 w-[50%] h-[1px] bg-[#d3d3d3] transition-all duration-200 group-hover:w-[70%] group-hover:bg-[#1dbf73]"></div>
+                <div className='text-[16px] font-normal text-[#222325]'>Business</div>
+              </div>
+              <div className='icon flex flex-col items-center gap-1 group cursor-pointer'>
+                <img className='h-12 w-12' src='/img/lifestyle.png'/>
+                <div className="rounded-sm bottom-0 w-[50%] h-[1px] bg-[#d3d3d3] transition-all duration-200 group-hover:w-[70%] group-hover:bg-[#1dbf73]"></div>
+                <div className='text-[16px] font-normal text-[#222325]'>Lifestyle</div>
+              </div>
+              <div className='icon flex flex-col items-center gap-1 group cursor-pointer'>
+                <img className='h-12 w-12' src='/img/data.png'/>
+                <div className="rounded-sm bottom-0 w-[50%] h-[1px] bg-[#d3d3d3] transition-all duration-200 group-hover:w-[70%] group-hover:bg-[#1dbf73]"></div>
+                <div className='text-[16px] font-normal text-[#222325]'>Data</div>
+              </div>
+              <div className='icon flex flex-col items-center gap-1 group cursor-pointer'>
+                <img className='h-12 w-12' src='/img/photography.png'/>
+                <div className="rounded-sm bottom-0 w-[50%] h-[1px] bg-[#d3d3d3] transition-all duration-200 group-hover:w-[70%] group-hover:bg-[#1dbf73]"></div>
+                <div className='text-[16px] font-normal text-[#222325]'>Photography</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         <div className='flex justify-center bg-[#0d084d] text-white  py-[100px]'>
           <div className='w-[1400px] flex items-center gap-[100px]'>
             <div className='grow-0'>

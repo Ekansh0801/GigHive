@@ -6,7 +6,7 @@ const MyGigs = () => {
     <div className='mygigs flex justify-center'>
       <div className='container w-[1400px] py-[50px] '>
         <div className='title flex justify-between items-center'>
-          <h1>Gigs</h1>
+          <h1 className='font-medium text-3xl mb-5'>Gigs</h1>
           <Link to="/add" className='bg-[#1dbf73] text-white font-medium p-[10px] border-none rounded-md cursor-pointer'>Add New Gig</Link>
         </div>
         <table className='w-full self-center'>
