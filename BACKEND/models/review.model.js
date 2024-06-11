@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const reviewSchema = mongoose.Schema({
+const reviewSchema = new mongoose.Schema({
     gigId: {
       type: String,
       required: true,
@@ -23,4 +23,4 @@ const reviewSchema = mongoose.Schema({
     timestamps: true,
   });
 
-export default mongoose.model("Review",reviewSchema);
+  module.exports = mongoose.model("Review",reviewSchema);

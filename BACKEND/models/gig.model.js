@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const gigSchema = mongoose.Schema(  {
+const gigSchema = new mongoose.Schema(  {
     userId: {
       type: String,
       required: true,
@@ -37,10 +37,6 @@ const gigSchema = mongoose.Schema(  {
       type: [String],
       required: false,
     },
-    userId: {
-      type: String,
-      required: true,
-    },
     shortTitle: {
       type: String,
       required: true,
@@ -70,4 +66,4 @@ const gigSchema = mongoose.Schema(  {
     timestamps: true,
   });
 
-export default mongoose.model("Gig",gigSchema);
+module.exports =  mongoose.model("Gig",gigSchema);

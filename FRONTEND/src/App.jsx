@@ -1,74 +1,100 @@
-import Navbar from "./components/Navbar";
-import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
-import Gigs from "./pages/Gigs";
-import Gig from "./pages/Gig";
-import Orders from "./pages/Orders";
-import MyGigs from "./pages/MyGigs";
-import Add from "./pages/Add";
-import Messages from "./pages/Messages";
-import Message from "./pages/Message";
-const App = () => {
+import "./app.scss";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import React from "react";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Home from "./pages/home/Home";
+import Gigs from "./pages/gigs/Gigs";
+import Gig from "./pages/gig/Gig";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import Add from "./pages/add/Add";
+import Orders from "./pages/orders/Orders";
+import Messages from "./pages/messages/Messages";
+import Message from "./pages/message/Message";
+import MyGigs from "./pages/myGigs/MyGigs";
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from '@tanstack/react-query'
+
+import Pay from "./pages/pay/Pay";
+import Success from "./pages/success/Success";
+function App() {
+  const queryClient = new QueryClient()
+
 
   const Layout = () => {
     return (
-      <div>
-        <Navbar/>
-        <Outlet/>
-        <Footer/>
+      <div className="app">
+        <QueryClientProvider client={queryClient}>
+          <Navbar />
+          <Outlet />
+          <Footer />
+        </QueryClientProvider>
       </div>
-    )
-  }
+    );
+  };
+
   const router = createBrowserRouter([
     {
-      path:"/",
-      element:<Layout/>,
-      children:[
+      path: "/",
+      element: <Layout />,
+      children: [
         {
-          path:"/",
-          element:<Home/>
+          path: "/",
+          element: <Home />,
         },
         {
-          path:"/gigs",
-          element:<Gigs/>
+          path: "/gigs",
+          element: <Gigs />,
         },
         {
-          path:"/gig/:id",
-          element:<Gig/>
+          path: "/myGigs",
+          element: <MyGigs />,
         },
         {
-          path:"/orders",
-          element:<Orders/>
+          path: "/orders",
+          element: <Orders />,
         },
         {
-          path:"/mygigs",
-          element:<MyGigs/>
+          path: "/messages",
+          element: <Messages />,
         },
         {
-          path:"/gigs",
-          element:<Gigs/>
+          path: "/message/:id",
+          element: <Message />,
         },
         {
-          path:"/add",
-          element:<Add/>
+          path: "/add",
+          element: <Add />,
         },
         {
-          path:"/messages",
-          element:<Messages/>
+          path: "/gig/:id",
+          element: <Gig />,
         },
         {
-          path:"/message/:id",
-          element:<Message/>
+          path: "/register",
+          element: <Register />,
         },
-      ]
-    }
-  ])
-  return (
-    <div>
-      <RouterProvider router={router}/>
-    </div>
-  );
-};
+        {
+          path: "/login",
+          element: <Login />,
+        },
+        {
+          path: "/pay/:id",
+          element: <Pay />,
+        },
+        {
+          path: "/success",
+          element: <Success />,
+        },
+      ],
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
+}
 
 export default App;
